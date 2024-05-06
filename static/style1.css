@@ -1,0 +1,140 @@
+body {
+    width: 100vw;
+    height: 150vh;
+    overflow-x: hidden;
+  }
+  
+.alert {
+    transition: opacity 1s; /* You can adjust the duration as needed */
+}
+
+main {
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    overflow-y: auto;
+}
+
+header {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+.navbar-nav {
+display: block;
+flex-direction: row;
+list-style: none;
+}
+
+.navbar-nav li {
+padding: 0 10px;
+}
+
+.navbar-nav li a {
+text-decoration: none;
+color: #fff;
+}
+
+.nav-item {
+width: max-content;
+}
+
+@media (max-width: 768px) {
+main {
+    margin-top: 150px;
+}
+header {
+    font-size: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    }
+
+    header h1 {
+    font-size: 1.5rem;
+    }
+
+    header nav {
+    display: block;
+    }
+
+    .nav-item {
+    width: auto;
+    }
+}
+
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Initial height of map */
+    margin-top: 20px; /* Adjust spacing as needed */
+    }
+    
+    #map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+      
+.resize-handle {
+position: absolute;
+right: 5px;
+bottom: 5px;
+width: 20px;
+height: 20px;
+background-color: #ccc;
+cursor: nwse-resize;
+}
+
+.footer {
+    height: 70px;
+  }
+  
+.heading {
+display: inline-flex;
+width: fit-content;
+margin-left: 7%;
+position: relative;
+top: 25px;
+}
+
+
+.leaflet-routing-instructions {
+    height: 40%;
+    overflow-y: scroll !important;
+  }
+  
+.leaflet-routing-container {
+    z-index: 1000;
+}
+
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    margin-top: 20px; 
+  }
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    cursor: nwse-resize;
+  }
+
+.places_of_interest {
+  max-height: 1000px; 
+  overflow-y: auto;
+
+}
